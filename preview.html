@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario — Elektricist &amp; Instalues Profesionist Pllakash</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="logo-transparent.png">
+<style>
+:root {
+  --wp--preset--color--primary: #ffbf43;
+  --wp--preset--color--primary-hover: #efb441;
+  --wp--preset--color--mono-1: #303030;
+  --wp--preset--color--mono-2: #71717A;
+  --wp--preset--color--mono-3: #D4D4D8;
+  --wp--preset--color--mono-4: #FAFAF9;
+  --wp--preset--color--contrast-light: #FFFFFF;
+  --wp--preset--color--contrast-dark: #000000;
+  --wp--preset--color--base: #FFFFFF;
+  --wp--preset--spacing--superbspacing-xxsmall: clamp(5px,1vw,10px);
+  --wp--preset--spacing--superbspacing-xsmall:  clamp(10px,2vw,20px);
+  --wp--preset--spacing--superbspacing-small:   clamp(20px,4vw,40px);
+  --wp--preset--spacing--superbspacing-medium:  clamp(30px,6vw,60px);
+  --wp--preset--spacing--superbspacing-large:   clamp(40px,8vw,80px);
+  --wp--preset--spacing--superbspacing-xlarge:  clamp(50px,10vw,100px);
+  --wp--preset--spacing--superbspacing-xxlarge: clamp(60px,12vw,120px);
+  --wp--preset--font-size--superbfont-xxsmall: clamp(12px,1.2vw,14px);
+  --wp--preset--font-size--superbfont-xsmall:  16px;
+  --wp--preset--font-size--superbfont-small:   clamp(16px,1.5vw,18px);
+  --wp--preset--font-size--superbfont-medium:  clamp(18px,2vw,20px);
+  --wp--preset--font-family--fontprimary: "Instrument Sans", sans-serif;
+  --wp--style--global--content-size: 1200px;
+}
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("assets/fonts/Instrument_Sans/InstrumentSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+html { scroll-behavior: smooth; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--wp--preset--font-family--fontprimary); font-size: 16px; color: #000; background: #fff; line-height: 150%; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-weight: 500; line-height: 1.4; color: #303030; }
+
+/* Layout */
+.alignfull { width: 100%; max-width: 100%; }
+.inner { max-width: var(--wp--style--global--content-size); margin: 0 auto; }
+.wp-block-columns { display: flex; flex-wrap: wrap; gap: 1.5rem; width: 100%; }
+.wp-block-column { flex: 1 1 0; min-width: 0; }
+.vcenter > .wp-block-column, .vcenter { align-self: center; }
+
+/* Buttons */
+.btn {
+  display: inline-block; padding: 0.65em 1.5em;
+  background: var(--wp--preset--color--primary);
+  color: #fff; border-radius: 100px; font-weight: 500;
+  font-size: 16px; cursor: pointer; border: none;
+  font-family: inherit; transition: background 0.2s;
+  text-decoration: none;
+}
+.btn:hover { background: var(--wp--preset--color--primary-hover); text-decoration: none; }
+.btn-outline { background: transparent; border: 1px solid #D4D4D8; color: #303030; }
+.btn-outline:hover { background: #f5f5f5; }
+.btn-green { background: #25D366; }
+.btn-green:hover { background: #1ebe5d; }
+
+/* Cover / Hero */
+.cover { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; width: 100%; min-height: clamp(550px, 70vh, 800px); }
+.cover img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 0; }
+.cover .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.50); z-index: 1; }
+.cover .content { position: relative; z-index: 2; width: 100%; max-width: var(--wp--style--global--content-size); margin: 0 auto; color: #fff; padding: var(--wp--preset--spacing--superbspacing-xxlarge) var(--wp--preset--spacing--superbspacing-small); text-align: center; }
+
+/* Borders */
+.card { border: 1px solid #D4D4D8; padding: 25px; border-radius: 8px; transition: box-shadow 0.2s; }
+.card:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.09); }
+
+/* Nav */
+header { position: sticky; top: 0; z-index: 100; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+.nav-inner { max-width: var(--wp--style--global--content-size); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: clamp(8px,1.5vw,12px) clamp(20px,4vw,40px); gap: 1rem; position: relative; }
+.nav-logo img { height: 80px; width: auto; display: block; transform: scale(1.5); transform-origin: left center; }
+.nav-links { display: flex; gap: clamp(16px,3vw,36px); font-size: 16px; position: absolute; left: 50%; transform: translateX(-50%); }
+.nav-links a:hover { color: var(--wp--preset--color--primary); text-decoration: none; }
+.nav-right { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+
+/* Language switcher */
+.lang-switcher { display: flex; align-items: center; gap: 4px; }
+.lang-btn {
+  background: none; border: 2px solid transparent; border-radius: 6px;
+  cursor: pointer; padding: 2px 5px; font-size: 22px; line-height: 1;
+  transition: border-color 0.15s, transform 0.1s; display: flex; align-items: center;
+}
+.lang-btn:hover { transform: scale(1.1); }
+.lang-btn.active { border-color: var(--wp--preset--color--primary); }
+
+section[id] { scroll-margin-top: 70px; }
+
+/* Form */
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label { font-size: 14px; font-weight: 500; color: #303030; }
+.form-group input, .form-group textarea {
+  padding: 12px 16px; border: 1px solid #D4D4D8; border-radius: 8px;
+  font-size: 16px; font-family: inherit; outline: none; transition: border-color 0.2s;
+  width: 100%;
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--wp--preset--color--primary); }
+.form-group textarea { resize: vertical; }
+
+/* Footer */
+footer { background: #000; color: #fff; position: relative; overflow: hidden; }
+footer::before { content: ''; position: absolute; inset: 0; background: url('logo-transparent.png') no-repeat center center; background-size: 60%; opacity: 0.06; pointer-events: none; z-index: 0; }
+.footer-inner { position: relative; z-index: 1; }
+.footer-inner { max-width: var(--wp--style--global--content-size); margin: 0 auto; padding: var(--wp--preset--spacing--superbspacing-medium) var(--wp--preset--spacing--superbspacing-small) var(--wp--preset--spacing--superbspacing-xxsmall); }
+.footer-grid { display: flex; flex-wrap: wrap; gap: 3rem; align-items: flex-start; }
+.footer-col-logo { flex: 1 1 260px; }
+.footer-col-links { flex: 0 0 120px; }
+.footer-col-contact { flex: 1 1 220px; }
+.footer-divider { border-top: 1px solid #222; margin-top: 60px; padding: clamp(10px,2vw,20px) 0; text-align: center; font-size: 14px; color: #aaa; }
+.footer-contact-box { background: #303030; border-radius: 10px; padding: 12px; display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.footer-contact-box img { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; }
+.footer-contact-box .text { border-left: 1px solid #fff; padding-left: 12px; font-size: 13px; white-space: pre-line; }
+
+/* CTA section */
+.cta-section { background-image: url('assets/images/cta/cta-006.jpg'); background-size: cover; background-position: center; position: relative; padding: var(--wp--preset--spacing--superbspacing-xxlarge) var(--wp--preset--spacing--superbspacing-small); }
+.cta-section .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.50); }
+.cta-section .content { position: relative; z-index: 1; max-width: var(--wp--style--global--content-size); margin: 0 auto; }
+
+/* Checklist */
+.checklist { display: flex; flex-direction: column; gap: 1rem; }
+.checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; }
+.checklist-item img { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .wp-block-columns { flex-direction: column; }
+  .footer-grid { flex-direction: column; gap: 2rem; }
+  .cta-section .wp-block-columns { flex-direction: column; }
+}
+
+/* ── Portfolio gallery ── */
+.portfolio-filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 2rem; }
+.filter-btn { padding: 0.45em 1.25em; border-radius: 100px; border: 2px solid #1a5caa; background: transparent; color: #dde6f0; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 500; transition: all 0.18s; }
+.filter-btn:hover, .filter-btn.active { background: var(--wp--preset--color--primary); border-color: var(--wp--preset--color--primary); color: #fff; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.pitem { overflow: hidden; border-radius: 8px; aspect-ratio: 4/3; cursor: pointer; }
+.pitem img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
+.pitem:hover img { transform: scale(1.05); }
+.pitem.hidden { display: none; }
+
+/* ── Before / After slider ── */
+.ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.ba-slider { position: relative; overflow: hidden; border-radius: 10px; aspect-ratio: 3/4; cursor: col-resize; user-select: none; touch-action: pan-y; }
+.ba-img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; object-fit: cover; }
+.ba-img.ba-before { z-index: 1; }
+.ba-img.ba-after  { z-index: 2; clip-path: inset(0 0 0 50%); }
+.ba-handle { position: absolute; top: 0; bottom: 0; left: 50%; z-index: 3; width: 3px; background: #fff; transform: translateX(-50%); pointer-events: none; }
+.ba-circle { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.5); font-size: 18px; color: #333; pointer-events: none; }
+.ba-lbl { position: absolute; top: 10px; z-index: 4; padding: 3px 10px; background: rgba(0,0,0,0.55); color: #fff; font-size: 12px; font-weight: 700; border-radius: 100px; letter-spacing: 0.08em; pointer-events: none; }
+.ba-lbl-l { left: 10px; }
+.ba-lbl-r { right: 10px; }
+.ba-caption { text-align: center; margin-top: 0.75rem; font-size: 15px; font-weight: 500; color: #dde6f0; }
+@media (max-width: 640px) { .ba-grid { grid-template-columns: 1fr; } }
+
+/* ── Dark theme ── */
+body { background: #192A51; color: #dde6f0; }
+h1,h2,h3,h4,h5,h6 { color: #f0f6ff; }
+a { color: #dde6f0; }
+header { background: #D7BA89; box-shadow: 0 1px 8px rgba(0,0,0,0.6); }
+.nav-links a { color: #192A51; }
+.nav-links a:hover { color: #192A51; opacity: 0.7; }
+.card { background: #004C99; border-color: #1a5caa; }
+.card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+.btn-outline { background: transparent; border-color: #4a7cc0; color: #dde6f0; }
+.btn-outline:hover { background: rgba(255,255,255,0.06); }
+.form-group label { color: #c8d8e8; }
+.form-group input, .form-group textarea { background: #004C99; border-color: #1a5caa; color: #dde6f0; }
+.form-group input::placeholder, .form-group textarea::placeholder { color: #5080b8; }
+.form-group input:focus, .form-group textarea:focus { border-color: var(--wp--preset--color--primary); }
+footer { background: #D7BA89; color: #192A51; }
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #192A51; }
+footer a { color: #192A51; }
+.footer-contact-box { background: rgba(25,42,81,0.12); }
+.footer-contact-box .text { border-left-color: #192A51; color: #192A51; }
+.footer-divider { border-color: rgba(25,42,81,0.25); color: #192A51; }
+</style>
+<link rel="stylesheet" href="assets/css/patterns.css">
+</head>
+<body>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;padding:1rem;">
+  <img id="lb-img" src="" alt="" style="max-width:94vw;max-height:92vh;border-radius:6px;object-fit:contain;"/>
+  <button onclick="closeLightbox()" style="position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1;">&#x2715;</button>
+  <button onclick="event.stopPropagation();lbPrev()" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.18);border:none;color:#fff;font-size:2.2rem;cursor:pointer;border-radius:50%;width:52px;height:52px;display:flex;align-items:center;justify-content:center;line-height:1;">&#8249;</button>
+  <button onclick="event.stopPropagation();lbNext()" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.18);border:none;color:#fff;font-size:2.2rem;cursor:pointer;border-radius:50%;width:52px;height:52px;display:flex;align-items:center;justify-content:center;line-height:1;">&#8250;</button>
+</div>
+
+<!-- NAVIGATION -->
+<div id="inizio" style="position:absolute;top:0;"></div>
+<header>
+  <div class="nav-inner">
+    <a href="#inizio" class="nav-logo">
+      <img src="logo-transparent.png" alt="Mario"/>
+    </a>
+    <nav class="nav-links">
+      <a href="#servizi"   data-i18n="nav-servizi">Shërbime</a>
+      <a href="#portfolio" data-i18n="nav-portfolio">Punime</a>
+      <a href="#chi-siamo" data-i18n="nav-chi-siamo">Rreth Marios</a>
+      <a href="#contatti"  data-i18n="nav-contatti">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#contatti" class="btn" style="padding:0.5em 1.1em;font-size:13px;" data-i18n="nav-cta">KËRKO KONSULTE</a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="sq" title="Shqip"    onclick="setLanguage('sq')">🇦🇱</button>
+        <button class="lang-btn"        data-lang="en" title="English"  onclick="setLanguage('en')">🇬🇧</button>
+        <button class="lang-btn"        data-lang="it" title="Italiano" onclick="setLanguage('it')">🇮🇹</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="cover">
+    <img class="bg" src="assets/images/header/22644694-b985-43eb-8a76-57f5248f13f9.png" alt=""/>
+    <div class="overlay"></div>
+    <div class="content">
+      <div style="max-width:780px;margin:0 auto;">
+        <h2 style="font-size:clamp(32px,5vw,62px);color:#fff;font-weight:500;line-height:1.2;" data-i18n="hero-title">Zejtari me Precizion, Rezultate Profesionale</h2>
+      </div>
+      <div style="max-width:700px;margin:1.5rem auto 0;">
+        <p style="color:rgba(255,255,255,0.88);margin-bottom:1.5rem;font-size:clamp(15px,1.8vw,18px);letter-spacing:0.01em;" data-i18n="hero-sub">Elektricist i Çertifikuar &nbsp;·&nbsp; Instalues Profesionist Pllakash &nbsp;·&nbsp; Specialist Karton-Gipsi &amp; Ndriçimit</p>
+        <a href="#contatti" class="btn" style="font-size:18px;" data-i18n="hero-btn">Kërko një Konsultë Falas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="chi-siamo">
+  <div style="background:#192A51;padding:var(--wp--preset--spacing--superbspacing-xlarge) var(--wp--preset--spacing--superbspacing-small);">
+    <div class="inner">
+      <div class="wp-block-columns vcenter" style="gap:clamp(30px,6vw,80px);">
+        <div class="wp-block-column vcenter">
+          <img src="profile.png" alt="Mario" style="border-radius:8px;"/>
+        </div>
+        <div class="wp-block-column vcenter">
+          <p style="color:var(--wp--preset--color--primary);font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;" data-i18n="about-greeting">Unë jam Mario</p>
+          <h2 style="font-size:clamp(28px,3vw,40px);" data-i18n="about-title">Disiplinë Industriale, Precizion Artizanal</h2>
+          <p style="color:#7a9ab8;margin-top:1rem;" data-i18n="about-text">Mario është elektricist i çertifikuar, i cili punon në njërin nga ambientet industriale më kërkuese të rajonit — KURUM INTERNATIONAL SH.A. Ajo disiplinë industriale e udhëheq çdo projekt që merr përsipër. Jashtë punës, Mario ka fituar reputacionin e një instaluesi mjeshtër pllakash, duke transformuar kuzhina, banjo, ambiente banimi dhe terasa të jashtme në sipërfaqe me bukuri dhe precizion të qëndrueshëm. Ai merret gjithashtu me elektrifikim të plotë të banesave dhe specializohet në ndërtimin me karton-gips me ndriçim arkitekturor të integruar.</p>
+          <h3 style="font-size:var(--wp--preset--font-size--superbfont-medium);margin-top:1.25rem;" data-i18n="about-why">Pse të Punosh me Marios?</h3>
+          <ol style="margin-top:0.75rem;padding-left:1.5rem;color:#7a9ab8;display:flex;flex-direction:column;gap:0.3rem;">
+            <li data-i18n="about-li1">Elektricist i Çertifikuar, i Trajnuar Industrialisht</li>
+            <li data-i18n="about-li2">Vëmendje e Plotë ndaj Detajeve në Çdo Përfundim</li>
+            <li data-i18n="about-li3">Oferta Transparente, Pa Kosto të Fshehura</li>
+            <li data-i18n="about-li4">Respektim i Rreptë i Standardeve të Sigurisë</li>
+          </ol>
+          <a href="#contatti" class="btn" style="margin-top:1.5rem;display:inline-block;" data-i18n="about-btn">Kërko Konsultë Falas</a>
+          <div style="margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.1);">
+            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.4rem 0.75rem;margin-bottom:0.75rem;">
+              <span style="display:flex;align-items:center;gap:5px;"><span style="font-size:20px;">🇦🇱</span><span style="color:#fff;font-size:13px;font-weight:600;">Shqip</span><span style="color:var(--wp--preset--color--primary);font-size:11px;font-weight:700;background:rgba(255,191,67,0.15);border-radius:4px;padding:1px 6px;" data-i18n="lang-native">amtare</span></span>
+              <span style="color:#7a9ab8;">·</span>
+              <span style="display:flex;align-items:center;gap:5px;"><span style="font-size:20px;">🇬🇧</span><span style="color:#fff;font-size:13px;font-weight:600;">English</span><span style="color:#7a9ab8;font-size:11px;background:rgba(255,255,255,0.07);border-radius:4px;padding:1px 6px;" data-i18n="lang-understands">kupton</span></span>
+              <span style="color:#7a9ab8;">·</span>
+              <span style="display:flex;align-items:center;gap:5px;"><span style="font-size:20px;">🇩🇪</span><span style="color:#fff;font-size:13px;font-weight:600;">Deutsch</span><span style="color:#7a9ab8;font-size:11px;background:rgba(255,255,255,0.07);border-radius:4px;padding:1px 6px;" data-i18n="lang-understands">kupton</span></span>
+            </div>
+            <p style="color:#7a9ab8;font-size:13px;font-style:italic;line-height:1.6;" data-i18n="lang-note">Edhe pse flas vetëm shqip, teknologjia e sotme i bashkon njerëzit — bariera gjuhësore nuk do të jetë kurrë pengesë.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="servizi">
+  <div style="padding:var(--wp--preset--spacing--superbspacing-xlarge) var(--wp--preset--spacing--superbspacing-small);">
+    <div class="inner">
+      <div style="max-width:620px;margin:0 auto var(--wp--preset--spacing--superbspacing-medium);text-align:center;">
+        <h2 style="font-size:clamp(28px,3vw,40px);" data-i18n="services-title">Shërbime Eksperte, Ndërtuar mbi Standarde Profesionale</h2>
+        <p style="color:#7a9ab8;margin-top:0.75rem;" data-i18n="services-sub">Nga instalimi i saktë i pllakave deri te punimet elektrike të çertifikuara — Mario ofron cilësi që mund ta shohësh dhe të besosh.</p>
+      </div>
+      <div class="wp-block-columns" style="gap:clamp(10px,2vw,20px);">
+        <div class="wp-block-column card">
+          <img src="assets/images/content/content-19-drawing.png" alt="" style="width:53px;height:53px;object-fit:cover;margin-bottom:0.75rem;"/>
+          <h3 style="font-size:20px;" data-i18n="service1-title">Instalim Pllakash</h3>
+          <p style="color:#7a9ab8;margin-top:0.5rem;" data-i18n="service1-text">Posa profesionale e pllakave qeramike dhe guri për kuzhina, banjo, ambiente banimi dhe zona të jashtme — çdo sipërfaqe e niveluar dhe e përfunduar me saktësi.</p>
+        </div>
+        <div class="wp-block-column card">
+          <img src="assets/images/content/content-19-lightning.png" alt="" style="width:53px;height:53px;object-fit:cover;margin-bottom:0.75rem;"/>
+          <h3 style="font-size:20px;" data-i18n="service2-title">Elektrifikim Banesash</h3>
+          <p style="color:#7a9ab8;margin-top:0.5rem;" data-i18n="service2-text">Sisteme të plota elektrike rezidenciale — nga projektimi i qarkut deri te instalimi i çertifikuar, në përputhje me të gjitha standardet e sigurisë.</p>
+        </div>
+        <div class="wp-block-column card">
+          <img src="assets/images/content/content-19-roof.png" alt="" style="width:53px;height:53px;object-fit:cover;margin-bottom:0.75rem;"/>
+          <h3 style="font-size:20px;" data-i18n="service3-title">Karton-Gips &amp; Ndarje</h3>
+          <p style="color:#7a9ab8;margin-top:0.5rem;" data-i18n="service3-text">Ndarje dhomash, tavane të rremë dhe panele me karton-gips — përfundime të pastra me integritet strukturor dhe izolim akustik.</p>
+        </div>
+        <div class="wp-block-column card">
+          <img src="assets/images/content/content-19-tools.png" alt="" style="width:53px;height:53px;object-fit:cover;margin-bottom:0.75rem;"/>
+          <h3 style="font-size:20px;" data-i18n="service4-title">Ndriçim Arkitekturor</h3>
+          <p style="color:#7a9ab8;margin-top:0.5rem;" data-i18n="service4-text">Ndriçim i integruar, ambiental dhe dekorativ — projektuar dhe instaluar për të transformuar çdo hapësirë me elegancë dhe funksionalitet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div style="padding:var(--wp--preset--spacing--superbspacing-xlarge) var(--wp--preset--spacing--superbspacing-small);">
+    <div class="inner">
+      <div style="max-width:600px;margin:0 auto var(--wp--preset--spacing--superbspacing-medium);text-align:center;">
+        <h2 style="font-size:clamp(28px,3vw,40px);" data-i18n="portfolio-title">Punimet Tona</h2>
+        <p style="color:#7a9ab8;margin-top:0.75rem;" data-i18n="portfolio-sub">Çdo projekt pasqyron të njëjtin angazhim — e bëra siç duhet, herën e parë.</p>
+      </div>
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all"      data-i18n="portfolio-filter-all">Të gjitha</button>
+        <button class="filter-btn"        data-filter="bathroom" data-i18n="portfolio-filter-bathroom">Banjo</button>
+        <button class="filter-btn"        data-filter="flooring" data-i18n="portfolio-filter-flooring">Dysheme</button>
+        <button class="filter-btn"        data-filter="kitchen"  data-i18n="portfolio-filter-kitchen">Kuzhinë</button>
+        <button class="filter-btn"        data-filter="drywall"  data-i18n="portfolio-filter-drywall">Karton-Gips</button>
+      </div>
+      <div class="portfolio-grid">
+        <!-- BATHROOM -->
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-33 4.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-33 5.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-33 6.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-35.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-50 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-51 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-51.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-06-54 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-29.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-33.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-34.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-38 2.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-38 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-38.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-39.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-40.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-43.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-07-52.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-12-48 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-12-49 2.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="bathroom" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/bathroom/PHOTO-2026-06-04-21-12-52 21.jpg" alt="" loading="lazy"/></div>
+        <!-- FLOORING -->
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-05-50 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-05-50 7.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-05-51.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-06-13.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-06-30.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-07-51 2.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-07-51 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-07-51 4.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-07-51.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="flooring" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/flooring/external/PHOTO-2026-06-04-21-12-38 2.jpg" alt="" loading="lazy"/></div>
+        <!-- KITCHEN -->
+        <div class="pitem" data-cat="kitchen" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/kitchen/PHOTO-2026-06-04-21-06-39.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="kitchen" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/kitchen/PHOTO-2026-06-04-21-12-31.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="kitchen" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/kitchen/PHOTO-2026-06-04-21-12-32 2.jpg" alt="" loading="lazy"/></div>
+        <!-- DRYWALL -->
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-31.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-32 2.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-32 3.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-32 4.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-32 5.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-32.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-46.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-47.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-49.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-06-50 2.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-12-55 11.jpg" alt="" loading="lazy"/></div>
+        <div class="pitem" data-cat="drywall" onclick="openLightbox(this.querySelector('img').src)"><img src="assets/images/drywall/PHOTO-2026-06-04-21-12-55 12.jpg" alt="" loading="lazy"/></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="before-after">
+  <div style="background:#142044;padding:var(--wp--preset--spacing--superbspacing-xlarge) var(--wp--preset--spacing--superbspacing-small);">
+    <div class="inner">
+      <div style="max-width:600px;margin:0 auto var(--wp--preset--spacing--superbspacing-medium);text-align:center;">
+        <h2 style="font-size:clamp(28px,3vw,40px);" data-i18n="ba-title">Para &amp; Pas</h2>
+        <p style="color:#7a9ab8;margin-top:0.75rem;" data-i18n="ba-sub">Zvarrit vijën për të parë transformimin.</p>
+      </div>
+      <div class="ba-grid">
+        <div>
+          <div class="ba-slider">
+            <img class="ba-img ba-before" src="assets/images/before and after /after bathroom.jpg"  alt="Para" style="object-position:top center;"/>
+            <img class="ba-img ba-after"  src="assets/images/before and after /before bathroom.jpg" alt="Pas"  style="object-position:top center;"/>
+            <div class="ba-handle"><div class="ba-circle">&#x21F9;</div></div>
+            <span class="ba-lbl ba-lbl-l" data-i18n="ba-before">Para</span>
+            <span class="ba-lbl ba-lbl-r" data-i18n="ba-after">Pas</span>
+          </div>
+          <p class="ba-caption" data-i18n="ba-bathroom">Banjo</p>
+        </div>
+        <div>
+          <div class="ba-slider">
+            <img class="ba-img ba-before" src="assets/images/before and after /after kitchen.jpg"  alt="Para"/>
+            <img class="ba-img ba-after"  src="assets/images/before and after /before kitchen.jpg" alt="Pas"/>
+            <div class="ba-handle"><div class="ba-circle">&#x21F9;</div></div>
+            <span class="ba-lbl ba-lbl-l" data-i18n="ba-before">Para</span>
+            <span class="ba-lbl ba-lbl-r" data-i18n="ba-after">Pas</span>
+          </div>
+          <p class="ba-caption" data-i18n="ba-kitchen">Kuzhinë</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITMENT -->
+<section id="impegno">
+  <div style="padding:var(--wp--preset--spacing--superbspacing-large) var(--wp--preset--spacing--superbspacing-small);">
+    <div class="inner">
+      <div class="wp-block-columns vcenter" style="gap:clamp(30px,6vw,80px);">
+        <div class="wp-block-column vcenter">
+          <h3 style="font-size:clamp(28px,3vw,40px);" data-i18n="commitment-title">Ku Standardet Industriale Takon Kujdesin Artizanal</h3>
+          <p style="color:#7a9ab8;margin-top:1rem;" data-i18n="commitment-text">Mario sjell precizionin e inxhinierisë industriale në çdo hapësirë banesore. I çertifikuar nëpërmjet përvojës praktike në njërin nga impiantet industriale kryesore të rajonit, ai aplikon të njëjtat standarde rigoroze në vendosjen e pllakave, elektrifikimin dhe mbarimin e interiereve. Pa shkurtësa, pa afërsira — vetëm zejtari e ndershme, ekzekutim i pastër dhe rezultate që i rezistojnë provës së kohës.</p>
+        </div>
+        <div class="wp-block-column vcenter">
+          <img src="assets/images/content/content-22.webp" alt="" style="border-radius:8px;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section id="vantaggi">
+  <div style="background:#142044;padding:var(--wp--preset--spacing--superbspacing-xlarge) var(--wp--preset--spacing--superbspacing-small);">
+    <div class="inner">
+      <div class="wp-block-columns vcenter" style="gap:clamp(30px,6vw,80px);">
+        <div class="wp-block-column vcenter">
+          <img src="working.png" alt="" style="border-radius:8px;"/>
+        </div>
+        <div class="wp-block-column vcenter">
+          <h2 style="font-size:clamp(28px,3vw,40px);margin-bottom:1.5rem;" data-i18n="why-title">Pse të Zgjidhni Marios?</h2>
+          <div class="checklist">
+            <div class="checklist-item">
+              <img src="assets/images/content/content-024-checkmark.png" alt=""/>
+              <div><p style="font-weight:500;" data-i18n="why1-title">Trajnim Elektrik me Nivel Industrial</p><p style="color:#7a9ab8;font-size:14px;margin-top:3px;" data-i18n="why1-text">I formuar dhe i provuar në KURUM INTERNATIONAL SH.A. — ekspertizë e fitur në kushte të vërteta industriale.</p></div>
+            </div>
+            <div class="checklist-item">
+              <img src="assets/images/content/content-024-checkmark.png" alt=""/>
+              <div><p style="font-weight:500;" data-i18n="why2-title">Instalues Profesionist Pllakash — Të Gjitha Ambientet</p><p style="color:#7a9ab8;font-size:14px;margin-top:3px;" data-i18n="why2-text">Kuzhina, banjo, ambiente banimi, terasa dhe hapësira të jashtme — çdo punë e kryer me precizion.</p></div>
+            </div>
+            <div class="checklist-item">
+              <img src="assets/images/content/content-024-checkmark.png" alt=""/>
+              <div><p style="font-weight:500;" data-i18n="why3-title">Elektrifikim i Plotë Banesash</p><p style="color:#7a9ab8;font-size:14px;margin-top:3px;" data-i18n="why3-text">Projektim, instalim dhe çertifikim sigurie i sistemit të plotë elektrik — nga fillimi deri në fund.</p></div>
+            </div>
+            <div class="checklist-item">
+              <img src="assets/images/content/content-024-checkmark.png" alt=""/>
+              <div><p style="font-weight:500;" data-i18n="why4-title">Karton-Gips &amp; Ndriçim Arkitekturor</p><p style="color:#7a9ab8;font-size:14px;margin-top:3px;" data-i18n="why4-text">Tavane të rremë, ndarje dhomash dhe zgjidhje ndriçimi të integruara me rezultate mahnitëse.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-section">
+    <div class="overlay"></div>
+    <div class="content" style="position:relative;z-index:1;">
+      <div style="text-align:center;">
+        <h2 style="font-size:clamp(36px,6vw,80px);color:#fdfdfd;line-height:1.1;" data-i18n="cta-title">Le të bashkëpunojmë</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contatti">
+  <div style="background:#142044;padding:var(--wp--preset--spacing--superbspacing-xlarge) var(--wp--preset--spacing--superbspacing-small);">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-size:clamp(28px,3vw,40px);text-align:center;" data-i18n="form-title">Kërko një Konsultë Falas</h2>
+      <p style="text-align:center;color:#7a9ab8;margin-top:0.75rem;margin-bottom:2.5rem;" data-i18n="form-sub">Tregoji Marit projektin tuaj dhe ai do t'ju përgjigjet sa më shpejt të jetë e mundur.</p>
+      <form id="preventivo-form" style="display:flex;flex-direction:column;gap:1.25rem;">
+        <div style="display:flex;gap:1.25rem;flex-wrap:wrap;">
+          <div class="form-group" style="flex:1;min-width:200px;">
+            <label for="nome" data-i18n="form-nome-label">Emri dhe Mbiemri *</label>
+            <input id="nome" name="nome" type="text" required data-i18n-ph="form-nome-ph" placeholder="P.sh. Gjergji Marku"/>
+          </div>
+          <div class="form-group" style="flex:1;min-width:200px;">
+            <label for="email" data-i18n="form-email-label">Email</label>
+            <input id="email" name="email" type="email" data-i18n-ph="form-email-ph" placeholder="P.sh. gjergji@email.com"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="telefono" data-i18n="form-tel-label">Numri i Telefonit *</label>
+          <input id="telefono" name="telefono" type="tel" required data-i18n-ph="form-tel-ph" placeholder="P.sh. +355 69 123 4567"/>
+        </div>
+        <div class="form-group">
+          <label for="messaggio" data-i18n="form-msg-label">Mesazhi *</label>
+          <textarea id="messaggio" name="messaggio" rows="5" required data-i18n-ph="form-msg-ph" placeholder="Përshkruaj projektin tënd: lloji i punës, dimensionet, koha e preferuar..."></textarea>
+        </div>
+        <div style="text-align:center;">
+          <button type="submit" class="btn btn-green" style="font-size:16px;font-weight:600;padding:14px 2.5rem;display:inline-flex;align-items:center;gap:0.6rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-i18n="form-submit">Dërgo në WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col-logo">
+        <img src="logo-transparent.png" alt="Mario" style="height:80px;width:auto;margin-bottom:1rem;transform:scale(1.5);transform-origin:left center;"/>
+        <p style="color:#192A51;max-width:300px;font-size:15px;" data-i18n="footer-desc">Elektricist i çertifikuar &amp; instalues profesionist pllakash. Zejtari profesionale dhe rezultate të qëndrueshme për shtëpinë tuaj.</p>
+      </div>
+      <div class="footer-col-links">
+        <h3 style="color:#192A51;font-size:15px;margin-top:10px;" data-i18n="footer-links-title">Lidhje të shpejta</h3>
+        <ul style="margin-top:0.5rem;display:flex;flex-direction:column;gap:0.5rem;font-size:15px;color:#192A51;">
+          <li><a href="#inizio"    style="color:#192A51;" data-i18n="footer-link-home">Kryefaqja</a></li>
+          <li><a href="#chi-siamo" style="color:#192A51;" data-i18n="footer-link-about">Rreth</a></li>
+          <li><a href="#servizi"   style="color:#192A51;" data-i18n="footer-link-services">Shërbime</a></li>
+          <li><a href="#portfolio" style="color:#192A51;" data-i18n="footer-link-portfolio">Punime</a></li>
+          <li><a href="#contatti"  style="color:#192A51;" data-i18n="footer-link-contact">O
+            
+
+          </a></li>
+        </ul>
+      </div>
+      <div class="footer-col-contact">
+        <h3 style="color:#192A51;font-size:15px;margin-top:10px;" data-i18n="footer-location-title">Vendndodhja</h3>
+        <div class="footer-contact-box" style="margin-bottom:20px;">
+          <img src="assets/images/footer/Icon-location.png" alt=""/>
+          <span class="text" data-i18n="footer-address">Elbasan, Albania
+Brescia, Italy</span>
+        </div>
+        <h3 style="color:#192A51;font-size:15px;" data-i18n="footer-contact-title">Me kontaktoni</h3>
+        <a href="tel:+355684667545" class="footer-contact-box" style="text-decoration:none;cursor:pointer;">
+          <img src="assets/images/footer/icon-phone.png" alt=""/>
+          <span class="text" data-i18n="footer-phone">+355 68 466 7545</span>
+        </a>
+        <a href="mailto:expertmario@yahoo.com" class="footer-contact-box" style="margin-top:8px;text-decoration:none;cursor:pointer;">
+          <img src="assets/images/footer/icon-mail.png" alt=""/>
+          <span class="text" data-i18n="footer-email">expertmario@yahoo.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-divider">
+      <span data-i18n="footer-copyright">Copyright &copy; 2026 Mario. Të gjitha të drejtat e rezervuara.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- TRANSLATIONS + LANGUAGE SWITCHER -->
+<script>
+/* ── Lightbox ── */
+var lbImages = [];
+var lbIndex  = 0;
+
+function openLightbox(src) {
+  lbImages = [];
+  document.querySelectorAll('.pitem:not(.hidden) img').forEach(function(img) {
+    lbImages.push(img.src);
+  });
+  lbIndex = lbImages.indexOf(src);
+  if (lbIndex === -1) lbIndex = 0;
+  document.getElementById('lb-img').src = lbImages[lbIndex];
+  document.getElementById('lightbox').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function lbPrev() {
+  lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
+  document.getElementById('lb-img').src = lbImages[lbIndex];
+}
+function lbNext() {
+  lbIndex = (lbIndex + 1) % lbImages.length;
+  document.getElementById('lb-img').src = lbImages[lbIndex];
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('lightbox').style.display === 'none') return;
+  if (e.key === 'Escape')      closeLightbox();
+  if (e.key === 'ArrowLeft')   lbPrev();
+  if (e.key === 'ArrowRight')  lbNext();
+});
+
+/* ── Portfolio filter ── */
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var cat = this.getAttribute('data-filter');
+    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+    document.querySelectorAll('.pitem').forEach(function(item) {
+      item.classList.toggle('hidden', cat !== 'all' && item.getAttribute('data-cat') !== cat);
+    });
+  });
+});
+
+/* ── Before / After slider ── */
+document.querySelectorAll('.ba-slider').forEach(function(slider) {
+  var after  = slider.querySelector('.ba-after');
+  var handle = slider.querySelector('.ba-handle');
+  var active = false;
+
+  function move(x) {
+    var r = slider.getBoundingClientRect();
+    var p = Math.max(2, Math.min(98, (x - r.left) / r.width * 100));
+    after.style.clipPath  = 'inset(0 0 0 ' + p + '%)';
+    handle.style.left = p + '%';
+  }
+
+  slider.addEventListener('mousedown', function(e) { active = true; move(e.clientX); e.preventDefault(); });
+  document.addEventListener('mousemove', function(e) { if (active) move(e.clientX); });
+  document.addEventListener('mouseup',   function()  { active = false; });
+  slider.addEventListener('touchstart', function(e)  { active = true; move(e.touches[0].clientX); }, {passive: true});
+  document.addEventListener('touchmove', function(e) { if (active) { move(e.touches[0].clientX); e.preventDefault(); } }, {passive: false});
+  document.addEventListener('touchend',  function()  { active = false; });
+});
+
+var currentLang = 'sq';
+
+var translations = {
+  sq: {
+    'nav-servizi':     'Shërbime',
+    'nav-chi-siamo':   'Rreth Meje',
+    'nav-contatti':    'Kontakt',
+    'nav-portfolio':   'Punime',
+    'nav-cta':         'Kërko një konsultë',
+    'hero-title':      'Shtrim pllakash dhe instalime elektrike profesionale',
+    'hero-sub':        'Cilësi, përpikëri dhe profesionalizëm në çdo projekt.',
+    'hero-btn':        'Kërko një konsultë falas',
+    'about-greeting':  'Unë jam Mario',
+    'about-title':     'Rreth meje',
+    'about-text':      'Jam elektricist i diplomuar me përvojë profesionale në industrinë elektrike. Punoj në Kurum International Sh.A., ku jam përgjegjës për mirëmbajtjen dhe instalimet elektrike industriale, duke fituar çdo ditë eksperiencë të gjerë teknike dhe duke respektuar standarde të larta sigurie. Përveç profesionit tim si elektricist, kam shumë vite eksperiencë në shtrimin e pllakave dhe punimet e brendshme, duke realizuar me sukses banjo, kuzhina, apartamente, vila dhe ambiente të jashtme. Përkushtimi ndaj cilësisë dhe vëmendja ndaj detajeve janë arsyet pse klientët vazhdojnë të më besojnë punën time.',
+    'about-why':       'Çfarë ofroj',
+    'about-li1':       'Shtrim pllakash',
+    'about-li2':       'Instalime elektrike',
+    'about-li3':       'Punime me kartonxhes',
+    'about-li4':       'Rinovime të ambienteve',
+    'about-btn':       'Më kontaktoni për preventiv falas',
+    'lang-native':     'amtare',
+    'lang-understands':'kuptoj',
+    'lang-note':       'Edhe pse flas vetëm shqip, teknologjia e sotme i bashkon njerëzit — bariera gjuhësore nuk do të jetë kurrë pengesë.',
+    'services-title':  'Shërbimet e mia',
+    'services-sub':    'Me vite përvojë në sistemet elektrike industriale dhe punimet e brendshme rezidenciale, ofroj zgjidhje profesionale për banesa, apartamente, ambiente komerciale dhe hapësira të jashtme.',
+    'service1-title':  'Shtrim pllakash',
+    'service1-text':   'Shtrim profesional i pllakave qeramike, porcelani, mermeri dhe guri dekorativ — banjo, kuzhina, sallon, korridore, tarraca, ballkone, oborre dhe ambiente biznesi. Çdo punë e realizuar me përpikëri dhe cilësi të lartë.',
+    'service2-title':  'Instalime elektrike',
+    'service2-text':   'Instalime elektrike të sigurta dhe profesionale — instalime të reja, rikonstruksione elektrike, montim ndriçimi, priza dhe çelësa, panele elektrike, riparime dhe sisteme LED. Çdo punë sipas standardeve profesionale.',
+    'service3-title':  'Punime me kartonxhes',
+    'service3-text':   'Zgjidhje moderne me kartonxhes — tavane të varura, ndarje ambientesh, tavane dekorative, ndriçim LED i integruar dhe punime përfundimtare të brendshme. Për ambiente elegante dhe funksionale.',
+    'service4-title':  'Rinovime të ambienteve',
+    'service4-text':   'Rinovim i plotë i apartamenteve, villave dhe hapësirave komerciale — nga dyshemeja deri në tavan, me materiale cilësore dhe ekzekutim profesional personal.',
+    'testimonial-text':"Mario ka vënë pllaka në të gjithë banjën dhe kuzhinën tonë — precizionin dhe cilësinë e punës e ke goja e gojës! Menjëherë e kupton se ai nuk është vetëm i aftë, por edhe profesionist i vërtetë. E rekomandoj me zemër!",
+    'testimonial-city':'Elbasan',
+    'portfolio-title': 'Punimet e mia',
+    'portfolio-sub':   'Disa nga projektet që kam realizuar personalisht.',
+    'portfolio-filter-all':      'Të gjitha',
+    'portfolio-filter-bathroom': 'Banjo',
+    'portfolio-filter-flooring': 'Dysheme',
+    'portfolio-filter-kitchen':  'Kuzhinë',
+    'portfolio-filter-drywall':  'Karton-Gips',
+    'ba-title':    'Para & Pas',
+    'ba-sub':      'Zvarrit vijën për të parë transformimin.',
+    'ba-before':   'Para',
+    'ba-after':    'Pas',
+    'ba-bathroom': 'Banjo',
+    'ba-kitchen':  'Kuzhinë',
+    'commitment-title':'Angazhimi im në çdo projekt',
+    'commitment-text': 'Puna ime udhëhiqet nga të njëjtat standarde që kam zhvilluar gjatë viteve të mia të përvojës. Çdo pllakë e vendos me precizion. Çdo instalim elektrik e realizoj me siguri, pastërti dhe sipas standardeve. Nuk largohem nga puna derisa puna të jetë kryer saktë e me kualitet që të zgjasë.',
+    'why-title':       'Pse të më zgjidhni mua?',
+    'why1-title':      'Punime cilësore',
+    'why1-text':       'Përfundim perfekt dhe vëmendje ndaj çdo detaji.',
+    'why2-title':      'Eksperiencë profesionale',
+    'why2-text':       'Elektricist i diplomuar me eksperiencë industriale dhe civile.',
+    'why3-title':      'Besueshmëri',
+    'why3-text':       'Respektim i afateve dhe komunikim korrekt.',
+    'why4-title':      'Kënaqësia e klientit',
+    'why4-text':       'Cilësia e punës është prioriteti im.',
+    'cta-title':       'Le të bashkëpunojmë',
+    'form-title':      'Kërko një konsultë falas',
+    'form-sub':        'Gati të filloni projektin? Më kontaktoni sot për një konsultim dhe preventiv falas.',
+    'form-nome-label': 'Emri dhe mbiemri *',
+    'form-nome-ph':    'P.sh. Gjergji Marku',
+    'form-email-label':'Email',
+    'form-email-ph':   'P.sh. gjergji@email.com',
+    'form-tel-label':  'Numri i telefonit *',
+    'form-tel-ph':     'P.sh. +355 69 123 4567',
+    'form-msg-label':  'Mesazhi *',
+    'form-msg-ph':     'Përshkruaj projektin tënd: lloji i punës, dimensionet, koha e preferuar...',
+    'form-submit':     'Dërgo në WhatsApp',
+    'footer-desc':     'Elektricist i diplomuar & instalues profesionist pllakash. Rezultate profesionale për çdo projekt.',
+    'footer-links-title':'Lidhje të shpejta',
+    'footer-link-home':   'Kryefaqja',
+    'footer-link-about':  'Rreth meje',
+    'footer-link-services':'Shërbime',
+    'footer-link-portfolio':'Punimet e mia',
+    'footer-link-contact': 'Konsultë',
+    'footer-location-title':'Vendndodhja',
+    'footer-address':  'Elbasan, Albania\nBrescia, Italy',
+    'footer-contact-title':'Me kontaktoni',
+    'footer-phone':    '+355 68 466 7545',
+    'footer-email':    'expertmario@yahoo.com',
+    'footer-copyright':'Copyright © 2026 Mario. Të gjitha të drejtat e rezervuara.',
+    'wa-header':       '⚡ *Kerkese e Re Preventivi*',
+    'wa-name':         '👤 *Emri:*',
+    'wa-email':        '📧 *Email:*',
+    'wa-phone':        '📞 *Telefoni:*',
+    'wa-msg':          '📝 *Mesazhi:*'
+  },
+  en: {
+    'nav-servizi':     'Services',
+    'nav-chi-siamo':   'About me',
+    'nav-contatti':    'Contact',
+    'nav-portfolio':   'Portfolio',
+    'nav-cta':         'Get a quote',
+    'hero-title':      'Professional tile installation & electrical services',
+    'hero-sub':        'Quality craftsmanship, precision, and reliability for every project.',
+    'hero-btn':        'Get a free consultation',
+    'about-greeting':  "I'm Mario",
+    'about-title':     'About me',
+    'about-text':      'I am a qualified electrician with a professional education in electrical engineering and practical experience in the heavy industry sector. I currently work at Kurum International Sh.A., where I am responsible for industrial electrical maintenance and installations, continuously developing strong technical skills and upholding the highest safety standards. Alongside my industrial career, I have built extensive experience in tile installation and interior finishing. I have successfully completed projects ranging from bathrooms and kitchens to complete home renovations and outdoor spaces. My attention to detail, professionalism, and dedication to customer satisfaction make me a trusted choice for every project.',
+    'about-why':       'What I do',
+    'about-li1':       'Tile installation',
+    'about-li2':   'Home electrical installations',
+    'about-li3':  'Drywall & plasterboard systems',
+    'about-li4': 'Interior & exterior renovations',
+    'about-btn':     'Contact me for a free quote',
+    'lang-native':     'native',
+    'lang-understands':'I understand',
+    'lang-note':       "I speak Albanian, but today's technology unites us — language will never be a barrier between us.",
+    'services-title':  'My services',
+    'services-sub':    'With years of experience in industrial electrical systems and residential finishing works, I deliver professional solutions for homes, apartments, commercial spaces, and outdoor environments.',
+    'service1-title':  'Tile installation',
+    'service1-text':   'Professional installation of ceramic, porcelain, marble, and stone tiles — bathrooms, kitchens, living rooms, hallways, terraces, balconies, outdoor areas, and commercial spaces. Every project completed with precision and clean finishing.',
+    'service2-title':  'Home electrical services',
+    'service2-text':   'Safe and reliable electrical installations — complete home wiring, electrical renovations, lighting, switches and outlets, distribution boards, troubleshooting, and LED solutions. All work performed to professional safety standards.',
+    'service3-title':  'Drywall & ceiling systems',
+    'service3-text':   'Installation of plasterboard systems — suspended ceilings, partition walls, decorative ceilings, integrated LED lighting, and interior finishing. Designed to create modern, functional, and elegant spaces.',
+    'service4-title': 'Interior & exterior renovations',
+    'service4-text':   'From complete apartment renovations to outdoor terraces — I handle every aspect of the job personally, ensuring quality materials and professional execution from start to finish.',
+    'testimonial-text':'Mario tiled our entire bathroom and kitchen — the precision and quality of his work is second to none. You can tell immediately he is not just skilled, but a true professional. Highly recommended!',
+    'testimonial-city':'Elbasan',
+    'portfolio-title': 'My Work',
+    'portfolio-sub':   'A selection of projects I have personally completed.',
+    'portfolio-filter-all':      'All',
+    'portfolio-filter-bathroom': 'Bathroom',
+    'portfolio-filter-flooring': 'Flooring',
+    'portfolio-filter-kitchen':  'Kitchen',
+    'portfolio-filter-drywall':  'Drywall',
+    'ba-title':    'Before & After',
+    'ba-sub':      'Drag the line to reveal the transformation.',
+    'ba-before':   'Before',
+    'ba-after':    'After',
+    'ba-bathroom': 'Bathroom',
+    'ba-kitchen':  'Kitchen',
+    'commitment-title':'My commitment to every project',
+    'commitment-text': "My work is guided by the same standards I developed during my years of experience. Every tile is set with engineering precision. Every electrical installation is carried out safely, cleanly, and to specification. I don't leave a job site until the work is done right — and done to last.",
+    'why-title':       'Why choose me?',
+    'why1-title':      'High-quality workmanship',
+    'why1-text':       'Every detail is completed with care and precision.',
+    'why2-title':      'Professional experience',
+    'why2-text':       'Qualified electrician with industrial and residential experience.',
+    'why3-title':      'Reliable service',
+    'why3-text':       'Projects delivered on time with transparent communication.',
+    'why4-title':      'Customer satisfaction',
+    'why4-text':       'Building long-term trust through quality work and honest service.',
+    'cta-title':       "Let\'s work together",
+    'form-title':    'Request a free consultation',
+    'form-sub':        'Ready to start your project? Contact me today for a free consultation and personalized quote.',
+    'form-nome-label': 'Full name *',
+    'form-nome-ph':    'E.g. John Smith',
+    'form-email-label':'Email',
+    'form-email-ph':   'E.g. john@email.com',
+    'form-tel-label':  'Phone number *',
+    'form-tel-ph':     'E.g. +355 69 123 4567',
+    'form-msg-label':  'Message *',
+    'form-msg-ph':     'Describe your project: type of work, dimensions, preferred timeline...',
+    'form-submit':     'Send via WhatsApp',
+    'footer-desc':     'Qualified electrician & expert tile installer. Professional results for every project.',
+    'footer-links-title':'Quick links',
+    'footer-link-home':   'Home',
+    'footer-link-about':  'About me',
+    'footer-link-services':'Services',
+    'footer-link-portfolio':'My work',
+    'footer-link-contact': 'Get a quote',
+    'footer-location-title':'Location',
+    'footer-address':  'Elbasan, Albania\nBrescia, Italy',
+    'footer-contact-title':'Contact me',
+    'footer-phone':    '+355 68 466 7545',
+    'footer-email':    'expertmario@yahoo.com',
+    'footer-copyright':'Copyright © 2026 Mario. All rights reserved.',
+    'wa-header':       '⚡ *New Service Request*',
+    'wa-name':         '👤 *Name:*',
+    'wa-email':        '📧 *Email:*',
+    'wa-phone':        '📞 *Phone:*',
+    'wa-msg':          '📝 *Message:*'
+  },
+  it: {
+    'nav-servizi':     'Servizi',
+    'nav-chi-siamo':   'Chi sono',
+    'nav-contatti':    'Contatti',
+    'nav-portfolio':   'Lavori',
+    'nav-cta':         'Richiedi preventivo',
+    'hero-title':      'Posa piastrelle e impianti elettrici professionali',
+    'hero-sub':        'Qualità, precisione e affidabilità in ogni progetto.',
+    'hero-btn': 'Richiedi una consulenza gratuita',
+    'about-greeting':  'Sono Mario',
+    'about-title':     'Chi sono',
+    'about-text':      "Sono un elettricista qualificato con formazione professionale ed esperienza nel settore industriale. Lavoro attualmente presso Kurum International Sh.A., dove sono responsabile della manutenzione e degli impianti elettrici industriali, sviluppando ogni giorno competenze tecniche elevate e mantenendo i più alti standard di sicurezza. Nel corso della mia carriera ho perfezionato la mia esperienza nella posa di piastrelle e nelle finiture interne ed esterne, realizzando bagni, cucine, appartamenti completi, ville e spazi esterni con elevati standard qualitativi. Professionalità, precisione e serietà sono i valori che contraddistinguono ogni mio lavoro.",
+    'about-why':       'Cosa offro',
+    'about-li1':       'Posa piastrelle',
+    'about-li2':       'Impianti elettrici civili',
+    'about-li3':       'Lavori in cartongesso',
+    'about-li4':       'Ristrutturazioni',
+    'about-btn': 'Contattami per un preventivo gratuito',
+    'lang-native':     'madrelingua',
+    'lang-understands':'capisco',
+    'lang-note':       "Parlo albanese, ma la tecnologia di oggi unisce le persone — la lingua non sarà mai una barriera tra noi.",
+    'services-title':  'I miei servizi',
+    'services-sub':    'Con anni di esperienza nei sistemi elettrici industriali e nelle finiture residenziali, offro soluzioni professionali per abitazioni, appartamenti, spazi commerciali e ambienti esterni.',
+    'service1-title':  'Posa piastrelle',
+    'service1-text':   'Installazione professionale di piastrelle in ceramica, gres porcellanato, marmo e pietra naturale — bagni, cucine, soggiorni, corridoi, terrazze, balconi, aree esterne e locali commerciali. Lavorazioni precise e rifinite nei minimi dettagli.',
+    'service2-title':  'Impianti elettrici',
+    'service2-text':   'Interventi elettrici sicuri e professionali — impianti completi, ristrutturazioni, installazione illuminazione, prese e interruttori, quadri elettrici, riparazioni e illuminazione LED. Tutto eseguito nel rispetto delle normative di sicurezza.',
+    'service3-title':  'Lavori in cartongesso',
+    'service3-text':   'Soluzioni in cartongesso per ambienti moderni ed eleganti — controsoffitti, pareti divisorie, controsoffitti decorativi, illuminazione LED integrata e finiture interne.',
+    'service4-title':  'Ristrutturazioni',
+    'service4-text':   "Ristrutturazione completa di appartamenti, ville e spazi commerciali — me ne occupo personalmente dall'inizio alla fine, garantendo materiali di qualità e un'esecuzione impeccabile.",
+    'testimonial-text':"Mario ha piastrellato l'intero bagno e la cucina — la precisione e la qualità del lavoro sono eccezionali. Si capisce subito che non è solo abile, ma un vero professionista. Lo raccomando vivamente!",
+    'testimonial-city':'Elbasan',
+    'portfolio-title': 'I miei lavori',
+    'portfolio-sub':   'Una selezione di progetti che ho realizzato personalmente.',
+    'portfolio-filter-all':      'Tutti',
+    'portfolio-filter-bathroom': 'Bagno',
+    'portfolio-filter-flooring': 'Pavimenti',
+    'portfolio-filter-kitchen':  'Cucina',
+    'portfolio-filter-drywall':  'Cartongesso',
+    'ba-title':    'Prima & Dopo',
+    'ba-sub':      'Trascina la linea per vedere la trasformazione.',
+    'ba-before':   'Prima',
+    'ba-after':    'Dopo',
+    'ba-bathroom': 'Bagno',
+    'ba-kitchen':  'Cucina',
+    'commitment-title':'Il mio impegno per ogni progetto',
+    'commitment-text': "Il mio lavoro è guidato dagli stessi standard che ho sviluppato nel corso degli anni di esperienza. Ogni piastrella viene posata con precisione. Ogni impianto elettrico viene realizzato in modo sicuro, pulito e nel rispetto delle specifiche. Non lascio il cantiere finché il lavoro non è fatto nel modo giusto — e destinato a durare.",
+    'why-title':       'Perché scegliere me?',
+    'why1-title':      'Qualità garantita',
+    'why1-text':       'Massima cura per ogni dettaglio.',
+    'why2-title':      'Esperienza professionale',
+    'why2-text':       'Elettricista qualificato con esperienza industriale e civile.',
+    'why3-title':      'Affidabilità',
+    'why3-text':       'Rispetto dei tempi e serietà professionale.',
+    'why4-title':      'Soddisfazione del cliente',
+    'why4-text':       'Il mio obiettivo è offrire lavori di alta qualità che durino nel tempo.',
+    'cta-title':       'Lavoriamo insieme',
+    'form-title': 'Richiedi una consulenza gratuita',
+    'form-sub':        'Pronto a iniziare il tuo progetto? Contattami oggi per una consulenza gratuita e un preventivo personalizzato.',
+    'form-nome-label': 'Nome e cognome *',
+    'form-nome-ph':    'Es. Marco Rossi',
+    'form-email-label':'Email',
+    'form-email-ph':   'Es. marco@email.com',
+    'form-tel-label':  'Numero di telefono *',
+    'form-tel-ph':     'Es. +39 333 123 4567',
+    'form-msg-label':  'Messaggio *',
+    'form-msg-ph':     'Descrivi il tuo progetto: tipo di lavoro, dimensioni, tempistiche...',
+    'form-submit':     'Invia su WhatsApp',
+    'footer-desc':     'Elettricista qualificato & posatore esperto di piastrelle. Risultati professionali per ogni progetto.',
+    'footer-links-title':'Link rapidi',
+    'footer-link-home':   'Home',
+    'footer-link-about':  'Chi sono',
+    'footer-link-services':'Servizi',
+    'footer-link-portfolio':'I miei lavori',
+    'footer-link-contact': 'Preventivo',
+    'footer-location-title':'Sede',
+    'footer-address':  'Elbasan, Albania\nBrescia, Italy',
+    'footer-contact-title':'Contattami',
+    'footer-phone':    '+355 68 466 7545',
+    'footer-email':    'expertmario@yahoo.com',
+    'footer-copyright':'Copyright © 2026 Mario. Tutti i diritti riservati.',
+    'wa-header':       '⚡ *Nuova Richiesta di Servizio*',
+    'wa-name':         '👤 *Nome:*',
+    'wa-email':        '📧 *Email:*',
+    'wa-phone':        '📞 *Telefono:*',
+    'wa-msg':          '📝 *Messaggio:*'
+  }
+};
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('https://ipapi.co/json/')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if      (data.country_code === 'AL') setLanguage('sq');
+      else if (data.country_code === 'IT') setLanguage('it');
+      else                                 setLanguage('en');
+    })
+    .catch(function() { setLanguage('sq'); });
+});
+
+function setLanguage(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (translations[lang][key] !== undefined) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-ph]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-ph');
+    if (translations[lang][key] !== undefined) {
+      el.placeholder = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+
+document.getElementById('preventivo-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var t    = translations[currentLang];
+  var nome = document.getElementById('nome').value.trim();
+  var mail = document.getElementById('email').value.trim();
+  var tel  = document.getElementById('telefono').value.trim();
+  var msg  = document.getElementById('messaggio').value.trim();
+
+  var testo = t['wa-header'] + '\n\n' +
+    t['wa-name']  + ' ' + nome + '\n' +
+    t['wa-email'] + ' ' + mail + '\n' +
+    t['wa-phone'] + ' ' + tel  + '\n' +
+    t['wa-msg']   + '\n' + msg;
+
+  var encoded  = encodeURIComponent(testo);
+  var appUrl   = 'whatsapp://send?phone=355684667545&text=' + encoded;
+  var webUrl   = 'https://wa.me/355684667545?text=' + encoded;
+
+  window.location.href = appUrl;
+
+  var fallback = setTimeout(function() {
+    window.open(webUrl, '_blank');
+  }, 1500);
+
+  document.addEventListener('visibilitychange', function handler() {
+    if (document.hidden) {
+      clearTimeout(fallback);
+      document.removeEventListener('visibilitychange', handler);
+    }
+  });
+});
+</script>
+</body>
+</html>
