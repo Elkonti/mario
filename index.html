@@ -157,13 +157,12 @@ footer::before { content: ''; position: absolute; inset: 0; background: url('log
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .wp-block-columns { flex-direction: column; }
-  .footer-grid { flex-direction: column; gap: 0.75rem; }
+  .footer-grid { flex-direction: column; gap: 1rem; }
   .cta-section .wp-block-columns { flex-direction: column; }
   .footer-inner { padding: 1.25rem 1.25rem 0.25rem; }
   .footer-divider { margin-top: 1rem; }
-  .footer-col-logo img { height: 50px !important; margin-bottom: 0.5rem !important; }
-  .footer-col-logo p { margin-bottom: 0; font-size: 13px; }
-  .footer-col-links, .footer-col-contact { margin-top: 0; }
+  .footer-col-logo, .footer-col-links, .footer-col-contact { flex: 0 0 auto; }
+  .footer-col-logo img { height: 60px !important; margin-bottom: 0.5rem !important; }
   .footer-col-contact h3 { margin-top: 0 !important; }
 }
 
