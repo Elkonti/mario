@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(grep -rn '$_GET\\\\|$_POST\\\\|$_REQUEST\\\\|$_SERVER\\\\|$_COOKIE' /Users/elkontqosja/Downloads/construction-and-renovation/inc/tgm/class-tgm-plugin-activation.php)",
+      "Bash(open *)"
+    ]
+  }
+}
